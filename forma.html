@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <style>
+       .emotional,.satisfied {margin-left: 50px;}
+       #textAreaComments {
+        resize: none;
+        height: 50px;
+        width: 250px;
+      }
+      #submit {
+        margin-left: -20px;
+      }
+    </style>
+    <title>Form</title>
+</head>
+
+<body>
+    <h1>My feedback form</h1>
+    <div>
+        <ul>
+            <form>
+                <li><label for="name">Name:</label>
+                <input type="text" id="name" name="name"></li>
+                <li><label for="email">Email:</label>
+                <input type="email" id="email" name="email"></li>
+                <li><label for="password">Password:</label>
+                <input type="password" id="password" name="password"></li>
+                <br>
+                <li>Please check all the emotionals that apply to you:</li>
+                <li class="emotional"><label for="emotional1">Angry</label>
+                    <input type="checkbox" id="emotional1" name="emotional1" value="angry" checked></li>
+                <li class="emotional"><label for="emotional2">Sad</label>
+                    <input type="checkbox" id="emotional2" name="emotional2" value="sad"></li>
+                <li class="emotional"><label for="emotional3">Happy</label>
+                    <input type="checkbox" id="emotional3" name="emotional3" value="happy"></li>
+                <li class="emotional"><label for="emotional4">Ambivalent</label>
+                    <input type="checkbox" id="emotional4" name="emotional4" value="ambivalent"></li>
+                    <br>
+                <li>How satisfied were you with our service?</li>
+                <li class="satisfied"><label for="verySatisfied">Very satisfied</label>
+                    <input type="radio" id="verySatisfied" name="serviceSatisfied" value="angry" checked></li>
+                <li class="satisfied"><label for="satisfied">Satisfied</label>
+                    <input type="radio" id="satisfied" name="serviceSatisfied" value="sad"></li>
+                <li class="satisfied"><label for="didntCare">Didn't care</label>
+                    <input type="radio" id="didntCare" name="serviceSatisfied" value="happy"></li>
+                <li class="satisfied"><label for="dissatisfied">Dissatisfied</label>
+                    <input type="radio" id="dissatisfied" name="serviceSatisfied" value="ambivalent"></li>
+                <li class="satisfied"><label for="veryDissatisfied">Very dissatisfied</label>
+                    <input type="radio" id="veryDissatisfied" name="serviceSatisfied" value="ambivalent"></li>
+                <li>Further comments:<label for="textAreaComments"></label>
+                    <textarea id="textAreaComments" name="w3review" ></textarea></li><br>
+                <li><label for="bioImage">Bio photo:</label>
+                    <input type="file" id="bioImage" name="bioImage"></li><br>
+                <li><label for="location">Location visited:</label>
+                    <select id="location" name="location">
+                        <option value="England">England</option>
+                        <option value="Serbia" checked="check">Serbia</option>
+                        <option value="France">France</option>
+                        <option value="Austria">Austria</option>
+                    </select></li>
+                    <li id="submit"><input type="submit"></li>
+            </form>
+        </ul>
+    </div>
+</body>
+
+</html>
+
